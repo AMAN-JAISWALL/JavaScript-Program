@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <!-- Q)isko krna h  -->
+
+    <script>
+        x = [1, 2, 3, 1, 2, 5, 7, 1]
+        for (var i = 0; i < x.length; i++) //i=0
+        {
+            var count = 0;    // count =0
+            for (var j = 0; j < x.length; j++)  // 3
+            {
+                if (x[i] == x[j] && i != j) // 1==1
+                {
+                    count = 1;
+                    break
+                }
+            }
+            if (count == 0) {
+                document.write(x[i] + "<br>")
+            }
+        }
+    </script>
+
+</body>
+
+</html>

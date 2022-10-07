@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let l = +prompt("Enter 1st Number");
+        let h = +prompt("Enter Second Number");
+        for(var i =l; i<h;i++){
+            let c =0;  //c =1 
+            for(var j =2; j<i; j++){  //i = 2  
+                if(i%j==0){  // 2 j=2 ==0
+                    c=1  // c=1 
+                    break
+                }
+            }
+            if(i>1 && c==0){  // 2 > 1 yes or c==0
+                document.write(i)
+            }
+        }
+    </script> -->
+
+
+
+
+
+    <script>
+        let a = +prompt("Enter 1st Number");
+        let b = +prompt("Enter Second Number");
+
+        for(var i=a; i<b; i++){
+            var c = 0;
+            for(var j =2; j<i;j++){
+                if(i%j==0){
+                    c = 1;
+                    break 
+                }
+            }
+            if(i>1 && c==0){
+                document.write(i);
+            }
+        }
+    </script>
+</body>
+</html>
