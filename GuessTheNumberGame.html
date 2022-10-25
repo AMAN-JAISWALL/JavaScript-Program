@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <form action="">
+        <input type="text" placeholder="Guess A Number From 1 to 10" id="txt1" >
+        <br>
+        <button onclick="fun1()" >Click Me </button>
+        <p id="res" >res:</p>
+    </form> -->
+
+
+    <!-- <script>
+        let random = Math.ceil(Math.random()*10);
+        console.log(random);
+        function fun1(event){
+            var txt1 = document.getElementById("txt1").value;
+            
+            
+            // while(txt1 !== random  ){
+                  
+
+            //     } 
+              
+                event.preventDefault()
+                if(txt1===random){
+                    document.getElementById("res").innerHTML = "You Win the Game";
+                    console.log("you Win");
+                }else{
+                    document.getElementById("res").innerHTML = "Play Again "
+                    console.log("U loss");
+                }
+        }
+        </script> -->
+
+    <!-- <script>
+      let randomNum = Math.ceil ( Math.random ()*10);
+        console.log(randomNum);
+      let number = parseInt(prompt("Guess a Number from 1 to 10 "));
+
+      while(number !== randomNum){
+       number = parseInt(prompt(" Play Again Guess a Number from 1 to 10 "));
+      console.log(randomNum);
+      }
+      if(number == randomNum){
+        document.write("You Win Game")
+      }
+    </script> -->
+
+
+
+
+    <!-- <script>
+        let random = Math.ceil( Math.random()*10);
+        console.log(random);
+
+        let num = parseInt(prompt(" Guess A Number From 1 to 10 "));
+
+        while(num !==random){
+            num = parseInt(prompt(" Wrong --- Play Again!! Guess A Number From 1 to 10 "));
+            console.log(random);
+        }
+        if(num=== random){
+            document.write("you Win the Game")
+        }
+    </script> -->
+
+
+
+
+
+    <script>
+        let num = parseInt(prompt("Guess A Number From 1 to 10 "));
+
+        let randomNum = Math.ceil(Math.random()*10);
+        console.log(randomNum);
+
+        while(num!== randomNum){
+            num = parseInt(prompt("Wrong! Number Guess Again Guess A Number From 1 to 10 "));
+        }
+        if(num===randomNum){
+            document.write("Guess is Right")
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>
