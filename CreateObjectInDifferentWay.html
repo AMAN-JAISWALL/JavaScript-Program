@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- we are create an object three differente way  -->
+    <!-- 1. object literals  -->
+    <!-- 2. using instance object directly -->
+    <!-- 3. using Constructor Function -->
+    
+    <!-- <script>
+        // 1.using object literal
+        let person = {
+            name: "aman jaiswal",
+            age : 24,
+            hobbies : ["Reading Books", "Play Online Games", "Regular WorkOut"],
+            wish : function(){
+                console.log("Good Evening");
+                document.write("Good Night")
+            },
+            objScore: {
+                maths: 72,
+                english:62
+            }
+        }
+        document.write(person.objScore.english)
+
+    </script> -->
+
+
+
+    <!-- <script>
+        // 2). using instance of object direct 
+
+        const person = new Object ({
+
+            name: "aman jaiswal",
+            age : 24,
+
+            wish : function(){
+                document.write("Good Evening")
+            },
+            hobbies : ["Reading Books", "Regular WorkOut", "PlayOnline Games"],
+
+            obj : {
+                scrore:{
+                    p : 72,
+                    c : 72,
+                    m : 72,
+                    e : 82,
+                    h : 70
+                }
+            }
+        });
+
+
+        document.write(person.obj.scrore.e)
+        person.wish();
+    </script> -->
+
+
+
+    <script>
+        // using constructor Function 
+
+        function Person(){
+            this.name = "aman jaiswal",
+            this.age = 24,
+            this.hobbies = ["reading Books ", "regular Work Out", "play online Games"],
+            this.wish = function (){
+                document.write("Good Morning sir")
+            }, 
+            this.obj = {
+                score : {
+                    P:72,
+                    c:72,
+                    m : 90,
+                    h: 72,
+                    e : 82
+                }
+            }
+        }
+        const p = new Person();
+        // p.wish()
+        // document.write(p.obj.score.m)
+
+    </script>
+</body>
+</html>
